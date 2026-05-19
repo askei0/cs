@@ -85,9 +85,6 @@
 					Console.WriteLine($"{names[i]} {quantities[i]}");
 			}
 		}
-
 	}
-
-
 }
 
