@@ -46,10 +46,10 @@
 			if(even)
 				cnt++;
 		}
-		Console.WriteLine($"Task b): \n {cnt}");
+		Console.WriteLine($"Task b): \n{cnt}");
 
 		// task c
-
+		Console.WriteLine("Task c): ");
 		for (int i = 0; i < n; i++)
 		{
 			int minval = int.MaxValue;
@@ -60,9 +60,43 @@
 					minval = strength[i,j];
 				}
 			}
-			Console.WriteLine($"{minval} ");
+			Console.Write($"{minval} ");
+		}
+		
+		Console.Write($"\n");
+		// task d
+		cnt = 0;
+		for (int i = 0; i < n; i++)
+		{
+			bool over = false;
+			for (int j = 0; j < m; j++)
+			{
+				if (strength[i,j] >= 500)
+				{
+					over = true;
+				}
+			}
+			if (over)
+			{
+				cnt++;
+			}
+		}
+		Console.WriteLine($"\nTask d): \n{cnt} ");
+		for (int i = 0; i < n; i++)
+		{
+			bool over = false;
+			for (int j = 0; j < m; j++)
+			{
+				if (strength[i,j] >= 500)
+					over = true;
+			}
+			if (over)
+			{
+				Console.Write($"{i + 1} ");
+			}
 		}
 
+		
 
 
 	}
