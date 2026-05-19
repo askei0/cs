@@ -78,11 +78,16 @@
 		// task d):
 		
 		for (int i = 0; i < n; i++)
-
-		if (name[i])
-		
+		{
+			if (names[i] == "Luke" && quantities[i] > t && dangers[i] >= 3)
+			{
+					Console.WriteLine("task d):");
+					Console.WriteLine($"{names[i]} {quantities[i]}");
+			}
+		}
 
 	}
 
 
 }
+
